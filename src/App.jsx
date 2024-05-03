@@ -22,7 +22,9 @@ function App() {
           <div className="UMC">
             <Link to="/"><p>UMC Movie</p></Link>
           </div>
-          <p>회원가입</p>
+          <p className={loginButtonClass} onClick={handleLoginButtonClick}>
+            {isLoggedIn ? '로그아웃' : '로그인'}
+          </p>
           <Link to="/popular"><p>Popular</p></Link>
           <Link to="/NowPlaying"><p>Now Playing</p></Link>
           <Link to="/TopRated"><p>Top Rated</p></Link>
