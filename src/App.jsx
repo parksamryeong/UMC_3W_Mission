@@ -7,6 +7,14 @@ import TopRated from './component/TopRatedPage';
 import UpComing from './component/UpComingPage';
 
 function App() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleLoginButtonClick = () => {
+      setIsLoggedIn(!isLoggedIn);
+    };
+
+    const loginButtonClass = isLoggedIn ? 'logout-button' : 'login-button';
+
   return (
     <BrowserRouter>
       <div className="app-container">
