@@ -28,6 +28,10 @@ function App() {
           <Route path="/TopRated" element={<TopRated />} />
           <Route path="/UpComing" element={<UpComing />} />
         </Routes>
+        
+        <footer>
+          UMC_3WEEK_PORJECT_PARK SAM RYEONG
+        </footer>
       </div>
     </BrowserRouter>
   );
